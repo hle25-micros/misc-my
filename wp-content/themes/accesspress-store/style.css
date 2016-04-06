@@ -411,7 +411,7 @@ a {
     padding-right: 32px;
 }
 .main-navigation ul.menu > li a:hover {
-    color: #e24545;
+    color: #f37321;
 }
 .main-navigation li.menu-item-has-children::after {
     display: block;
@@ -427,7 +427,7 @@ a {
     border-top-color: #ffffff;
 }
 .main-navigation ul.menu > li:hover::after {
-    border-top-color: #e24545;
+    border-top-color: #f37321;
 }
 #indicatorContainer {
     position: absolute;
@@ -484,7 +484,7 @@ a {
     left: auto;
     top: 56px;
     opacity: 1;
-    background: #E24545;
+    background: #f37321;
     width: 200px;
     display: block;
     height: auto;
@@ -513,7 +513,7 @@ a {
 .main-navigation ul ul li a {
     min-width: 160px;
     border-bottom: 1px solid rgba(0,0,0,0.1);
-    background: #E23C36;
+    background: #f37321;
     -moz-transition: all .35s ease;
     -ms-transition: all .35s ease;
     -o-transition: all .35s ease;
@@ -523,7 +523,7 @@ a {
     text-align: right;
 }
 .main-navigation ul ul li:hover > a {
-    background: rgb(181, 44, 39);
+    background: rgb(184, 80, 10);
     color: #FFFFFF;
 }
 .main-navigation ul ul li:last-child > a,
@@ -535,7 +535,7 @@ a {
     border: 6px solid transparent;
     width: 0;
     height: 0;
-    border-bottom-color: #E23C35;
+    border-bottom-color: #f37321;
     position: absolute;
     top: -12px;
     left: 30px;
@@ -760,6 +760,10 @@ boxed .#site-navigation > .store-menu > ul > li:last-child:hover ul:after {
 .infinite-scroll .posts-navigation,
 /* Older / Newer Posts Navigation (always hidden) */
 
+.site-footer {
+	background-color: #333333;
+}
+
 .infinite-scroll.neverending .site-footer {
     /* Theme Footer (when set to scrolling) */
     
@@ -954,7 +958,7 @@ body {
 }
 .product-remove a.remove.remove_from_wishlist:hover {
     border-radius: 0px;
-    background: #e24545 !important;
+    background: #f37321 !important;
 }
 #site-branding h1 a {
     text-transform: uppercase;
@@ -1021,7 +1025,7 @@ body {
 #site-navigation > ul > li.current-menu-item > a,
 #site-navigation > ul > li.current-menu-ancestor > a,
 .search-icon a {
-    color: #e24545;
+    color: #f37321;
 }
 #site-navigation > ul > li > a:after {
     position: absolute;
@@ -1113,7 +1117,7 @@ HEADER TWO
     border-top-color: #777;
 }
 .headertwo .home_navigation .inner_home #menu .main-navigation ul.menu > li:hover::after {
-    border-top-color: #e24545;
+    border-top-color: #f37321;
 }
 .headertwo .home_navigation .inner_home #menu #site-navigation .menu > li > a {
     padding: 7px 13px;
@@ -1226,12 +1230,14 @@ HEADER TWO
 #main-slider img {
     width: 100%;
 }
+
+/* Customized */
 .slider-caption {
     left: 0;
     padding: 0;
     position: absolute;
     text-align: left;
-    top: 35%;
+    top: 20%;
     width: 100%;
     z-index: 9999;
 }
@@ -1921,7 +1927,7 @@ HEADER TWO
 --------------------------------------------------------------*/
 
 #top-footer {
-    padding: 60px 0;
+    padding: 20px 0 10px 0;
 }
 .top-footer-wrap {
     margin-left: -2%;
@@ -1936,6 +1942,11 @@ HEADER TWO
 .columns-2 .top-footer-block {
     width: 48%;
 }
+
+.columns-2 .top-footer-block:nth-child(1) {
+	width: 100%;
+}
+
 .columns-3 .top-footer-block {
     width: 31.33%;
 }
@@ -1970,7 +1981,7 @@ HEADER TWO
 }
 .top-footer-block .es_lablebox {
     font-size: 14px;
-    color: #e24545;
+    color: #f37321;
     font-weight: 400;
 }
 .top-footer-block .es_textbox input {
@@ -1986,7 +1997,7 @@ HEADER TWO
 }
 .top-footer-block .es_button input {
     display: inline-block;
-    background: #e24545;
+    background: #f37321;
     border: none;
     color: #ffffff;
     font-size: 13px;
@@ -3026,7 +3037,7 @@ Responsive grid for pages
     left: 0px;
     width: 100%;
     display: block;
-    background: #e24545;
+    background: #f37321;
     color: #fff;
     font-weight: 700;
     font-size: 16px;
@@ -3203,7 +3214,7 @@ Responsive grid for pages
     border-bottom: 1px solid #a8a7a7;
 }
 .search-results .widget_shopping_cart .cart_list.product_list_widget li:hover {
-    border-bottom-color: #e24545 !important;
+    border-bottom-color: #f37321 !important;
     cursor: pointer !important;
 }
 .woocommerce.single.single-product .related.products h2 {
@@ -3306,11 +3317,11 @@ Responsive grid for pages
     color: #838080;
 }
 .search-results article .entry-footer .comments-link a:hover:before {
-    color: #e24545;
+    color: #f37321;
 }
 .search-results article .entry-footer .comments-link a:hover,
 .search-results article .entry-footer .cat-links a:hover {
-    color: #e24545;
+    color: #f37321;
 }
 .search-results .entry-meta {
     display: none;
@@ -3456,11 +3467,10 @@ Responsive grid for pages
     margin: 0;
     padding: 10px 0px;
     line-height: 16px;
-    background: url("images/signup.png") no-repeat right;
     border-bottom: 3px solid #ef9999;
     position: relative;
     margin-bottom: 20px;
-    color: #5a5a5a;
+    color: white;
     font-size: 16px;
     overflow: hidden;
 }
@@ -3480,7 +3490,7 @@ Responsive grid for pages
 }
 .signup button {
     color: #fff;
-    background-color: #e24545;
+    background-color: #f37321;
     border: none;
     font-size: 13px;
     height: 37px;
@@ -3489,12 +3499,12 @@ Responsive grid for pages
     cursor: pointer;
 }
 .aptf-tweet-content a {
-    color: #e24545 !important;
+    color: #f37321 !important;
     font-size: 15px !important;
     line-height: 22px !important;
 }
 .aptf-tweet-content .aptf-tweet-name {
-    color: #e24545 !important;
+    color: #f37321 !important;
     font-size: 15px !important;
     line-height: 20px !important;
     font-weight: 400 !important;
@@ -3505,7 +3515,10 @@ Responsive grid for pages
     line-height: 22px;
     font-weight: 400;
 }
+
+/* Customized */
 .footer-bottom {
+	display: none;
     padding: 30px 0;
     border-top: 1px solid #e7e7e7;
 }
@@ -3591,7 +3604,7 @@ Responsive grid for pages
     font-weight: 700;
     font-size: 16px;
     line-height: 40px;
-    color: #e24545;
+    color: #f37321;
     text-transform: uppercase;
 }
 .banner-btn .btn {
@@ -3610,13 +3623,13 @@ Responsive grid for pages
     display: none;
 }
 .caption-read-more1 {
-    background-color: #000000;
+    background-color: #008db2;
     color: #ffffff;
     display: inline-block;
     font-size: 16px;
     line-height: 17px;
     margin: 0 0 0 15px;
-    padding: 20px 26px;
+    padding: 11px 26px;
     text-transform: uppercase;
     transition: all 0.5s ease-out 0s;
     position: relative;
@@ -3626,9 +3639,9 @@ Responsive grid for pages
     display: block;
     width: 0;
     height: 100%;
-    border-top: 57px solid transparent;
+    border-top: 39px solid transparent;
     border-bottom: 0px solid transparent;
-    border-right: 47px solid #000000;
+    border-right: 47px solid #008db2;
     position: absolute;
     top: 0;
     margin-top: 0px;
@@ -3639,9 +3652,9 @@ Responsive grid for pages
 .caption-read-more1::before {
     content: url(images/arrow.png);
     position: absolute;
-    right: -55px;
-    background: red;
-    padding: 19.5px;
+    right: -38px;
+    background: #f37321;
+    padding: 10px;
     top: 0px;
 }
 .woocommerce ul.products li.product,
@@ -3707,7 +3720,7 @@ Responsive grid for pages
 }
 .woocommerce ul.products li.product .price-cart .add_to_cart_button,
 .woocommerce ul.products li.product .price-cart .added_to_cart {
-    background: #e24545;
+    background: #f37321;
     display: inline-block;
     color: #fff;
     font-weight: 700;
@@ -3719,7 +3732,7 @@ Responsive grid for pages
     padding: 0px 20px;
     text-align: center;
     margin: 0px;
-    border: 2px solid #e24545;
+    border: 2px solid #f37321;
 }
 .woocommerce ul.products li.product .price-cart .product_type_external{
     margin-top: 10px !important;
@@ -3887,8 +3900,8 @@ ul.products.list li.product .gridlist-buttonwrap {
     padding: 0px 30px;
     float: none;
     width: auto;
-    background: #e24545;
-    border: 2px solid #e24545;
+    background: #f37321;
+    border: 2px solid #f37321;
     color: #ffffff;
     margin-top: 0px;
     line-height: 36px;
@@ -3901,7 +3914,7 @@ ul.products.list li.product .gridlist-buttonwrap {
     padding: 0px 30px;
     float: none;
     width: auto;
-    background: #e24545;
+    background: #f37321;
     color: #ffffff;
     margin-top: 0px;
 }
@@ -3913,19 +3926,19 @@ ul.products.list li.product .gridlist-buttonwrap {
     color: #ffffff !important;
 }
 .woocommerce .gridlist-buttonwrap .add_to_cart_button {
-    background: #e24545 !important;
-    border: 2px solid #e24545;
+    background: #f37321 !important;
+    border: 2px solid #f37321;
     color: #fff !important;
 }
 .woocommerce ul.products li.product .price-cart .gridlist-buttonwrap a.button:hover,
 .woocommerce ul.products li.product .price-cart .added_to_cart:hover {
-    color: #e24545 !important;
+    color: #f37321 !important;
     background: #ffffff !important;
     opacity: 1;
-    border: 2px solid #e24545;
+    border: 2px solid #f37321;
 }
 .woocommerce ul.products li.product .price-cart .gridlist-buttonwrap a.button:hover:before {
-    color: #e24545 !important;
+    color: #f37321 !important;
 }
 .woocommerce .woocommerce-message {
     border: none;
@@ -3945,13 +3958,13 @@ ul.products.list li.product .gridlist-buttonwrap {
 .woocommerce a.button,
 .woocommerce button.button,
 .woocommerce input.button {
-    background: #e24545 !important;
+    background: #f37321 !important;
     color: #FFF !important;
     border-radius: 0px !important;
-    border: 2px solid #e24545;
+    border: 2px solid #f37321;
 }
 .woocommerce .woocommerce-message:before {
-    color: #e24545 !important;
+    color: #f37321 !important;
     margin-top: -10px;
     left: 10px !important;
 }
@@ -4008,7 +4021,7 @@ ul.products.list li.product .gridlist-buttonwrap {
 
 
 .main-navigation ul ul::before {
-    border-bottom: 10px solid #e24545;
+    border-bottom: 10px solid #f37321;
 }
 .mini_cart_item a {
     color: #c97178 !important;
@@ -4276,7 +4289,7 @@ div.view-cart .sub-menu {
     margin-left: 20px;
 }
 .ticker-title {
-    background: #e24545;
+    background: #f37321;
     padding: 0px 10px;
     margin-right: 26px;
     position: relative;
@@ -4289,7 +4302,7 @@ div.view-cart .sub-menu {
     height: 100%;
     border-top: 19px solid transparent;
     border-bottom: 0px solid transparent;
-    border-left: 17px solid #E24545;
+    border-left: 17px solid #f37321;
     position: absolute;
     top: 0;
     margin-top: 0px;
@@ -4321,7 +4334,7 @@ div.view-cart .sub-menu {
     border: none;
 }
 .inner_home {
-    border-bottom: 5px solid #e24545;
+    border-bottom: 5px solid #f37321;
     position: relative;
 }
 .inner_home:after {
@@ -4443,7 +4456,7 @@ a.quick-wishlist {
     padding: 8px 10px;
     font-size: 14px;
     text-decoration: none;
-    text-transform: uppercase;
+    text-transform: none;
     color: #ffffff;
     line-height: 20px;
     -webkit-transition: all ease 0.4s;
@@ -4470,7 +4483,7 @@ a.quick-wishlist {
 .headertwo .home_navigation .inner_home #menu #site-navigation .store-menu > ul > li:hover > a,
 .headertwo .home_navigation .inner_home #menu #site-navigation .menu > li.current-menu-item > a,
 .headertwo .home_navigation .inner_home #menu #site-navigation .menu > li.current_page_item > a {
-    color: #e24545;
+    color: #f37321;
 }
 
 .headertwo .home_navigation .inner_home #menu #site-navigation ul ul li a:hover {
@@ -4548,7 +4561,7 @@ a.quick-wishlist {
 }
 .promo-product1 aside span.btn.promo-link-btn {
     font-size: 15px;
-    color: #e24545;
+    color: #f37321;
     margin-top: 10px;
     text-transform: uppercase;
     line-height: 24px;
@@ -4603,9 +4616,9 @@ a.quick-wishlist {
 }
 .search-form button.searchsubmit {
     cursor: pointer;
-    background: #e24545;
+    background: #f37321;
     height: 100%;
-    border: 2px solid #e24545;
+    border: 2px solid #f37321;
     color: #ffffff;
     font-size: 12px;
     line-height: 24px;
@@ -4651,7 +4664,7 @@ a.quick-wishlist {
     -webkit-transition: all ease 0.4s;
 }
 .headertwo .headertwo-wrap .search-form button.searchsubmit:hover {
-    background: #e24545;
+    background: #f37321;
     color: #fff;
 }
 .slick-track li {} 
@@ -4692,7 +4705,7 @@ span.onsale {
     position: absolute;
     font-size: 14px;
     line-height: 30px;
-    background: #e24545;
+    background: #f37321;
     color: #ffffff;
     font-weight: 700;
     right: 0px;
@@ -4709,7 +4722,7 @@ span.onsale:after,
     height: 100%;
     border-top: 30px solid transparent;
     border-bottom: 0px solid transparent;
-    border-right: 22px solid #e24545;
+    border-right: 22px solid #f37321;
     position: absolute;
     top: 0;
     margin-top: 0px;
@@ -4723,7 +4736,7 @@ span.onsale:after,
     position: absolute;
     font-size: 14px;
     line-height: 30px;
-    background: #e24545;
+    background: #f37321;
     color: #ffffff;
     font-weight: 700;
     right: 0px;
@@ -4806,7 +4819,7 @@ span.onsale:after,
     transition: all 0.3s ease 0s;
 }
 .woocommerce.single.single-product .entry-summary form button.button:hover:before {
-    color: #e24545!important;
+    color: #f37321!important;
 }
 .woocommerce.single.single-product .entry-summary .add_to_wishlist {
     float: right;
@@ -4824,15 +4837,15 @@ span.onsale:after,
 }
 .woocommerce.single.single-product .entry-summary .add_to_wishlist:hover {
     background: #ffffff !important;
-    color: #e24545 !important;
+    color: #f37321 !important;
 }
 .woocommerce.single.single-product .entry-summary .feedback {
-    color: #e24545;
+    color: #f37321;
     font-style: italic;
 }
 .price del span {
     text-decoration: line-through;
-    color: #e24545;
+    color: #f37321;
 }
 .woocommerce.single.single-product .entry-summary .product_meta div {
     display: block;
@@ -4863,7 +4876,7 @@ span.onsale:after,
 }
 
 .woocommerce.single.single-product .entry-summary .show a{
-    background: #e24545;
+    background: #f37321;
     display: inline-block;
     color: #fff;
     font-weight: 700;
@@ -4875,16 +4888,16 @@ span.onsale:after,
     padding: 3px 15px;
     text-align: center;
     margin: 0px;
-    border: 2px solid #e24545;
+    border: 2px solid #f37321;
 }
 .woocommerce.single.single-product .entry-summary .show a:hover{
-    border: 2px solid #e24545;
+    border: 2px solid #f37321;
     background: #fff;
-    color: #e24545;
+    color: #f37321;
 }
 
 .woocommerce.single.single-product .entry-summary .add_to_wishlist{
-    background: #e24545;
+    background: #f37321;
     display: inline-block;
     color: #fff;
     font-weight: 700;
@@ -4896,7 +4909,7 @@ span.onsale:after,
     padding: 0px 10px;
     text-align: center;
     margin: 0px;
-    border: 2px solid #e24545;
+    border: 2px solid #f37321;
 }
 .woocommerce.single.single-product .entry-summary .yith-wcwl-add-to-wishlist{
     display: inline-block;
@@ -4953,7 +4966,7 @@ span.onsale:after,
 }
 .woocommerce.single.single-product .woocommerce-tabs ul.tabs li.active {
     border: none;
-    border-bottom: 1px solid #e24545;
+    border-bottom: 1px solid #f37321;
     background: url(images/tab.png) no-repeat right;
     position: relative;
 }
@@ -4965,7 +4978,7 @@ span.onsale:after,
 }
 .woocommerce.single.single-product .woocommerce-tabs ul.tabs li.active a {
     line-height: 20px;
-    color: #e24545;
+    color: #f37321;
 }
 .woocommerce.single.single-product .woocommerce-tabs {
     padding: 30px 0px;
@@ -5037,7 +5050,7 @@ span.onsale:after,
 }
 
 .item-wishlist:hover{
-        background: #e24545;
+        background: #f37321;
     color: #ffffff;
 }
 
@@ -5045,7 +5058,7 @@ span.onsale:after,
     color: #fff
 }
 .new-prod-slide .slick-slide .item-wishlist:hover {
-    background: #e24545;
+    background: #f37321;
     color: #ffffff;
 }
 .widget_product_categories ul.children li:last-child {
@@ -5307,7 +5320,7 @@ span.onsale:after,
     margin-bottom: 20px;
 }
 #top-footer .cta-banner .text-5-title.red {
-    color: #e24545;
+    color: #f37321;
 }
 #top-footer .cta-banner .text-5-desc {
     color: #a0a0a0;
@@ -5319,7 +5332,7 @@ span.onsale:after,
 }
 #top-footer .cta-banner .banner-btn a {
     display: inline-block;
-    color: #e24545;
+    color: #f37321;
     font-size: 16px;
     font-weight: 700;
     line-height: 30px;
@@ -5459,10 +5472,10 @@ span.onsale:after,
     margin-top: 10px;
 }
 .top-footer-block .widget_pages ul {
+	color: white;
     padding: 0px;
     margin: 0px;
     list-style-position: inside;
-    list-style-image: url('images/li.png');
 }
 .top-footer-block .widget_pages a {
     font-size: 15px;
@@ -5471,7 +5484,7 @@ span.onsale:after,
     line-height: 30px;
 }
 .top-footer-block .widget_pages a:hover {
-    color: #e24545;
+    color: #f37321;
 }
 
 /*-- About Us Inner Page Section Css --*/
@@ -5497,7 +5510,7 @@ span.onsale:after,
 }
 #content .page_header_wrap header>h1.entry-title,
 .woocommerce .entry-header h1.entry-title {
-    color: #e24545;
+    color: #f37321;
     font-family: 'Lato';
     font-weight: 700;
     font-size: 44px;
@@ -5527,7 +5540,7 @@ span.onsale:after,
 #content .page_header_wrap #accesspress-breadcrumb span,
 .woocommerce .entry-header .woocommerce-breadcrumb span {
     color: #ffffff;
-    background: #e24545;
+    background: #f37321;
     font-size: 16px;
     display: inline-block;
     position: relative;
@@ -5545,7 +5558,7 @@ span.onsale:after,
     height: 100%;
     border-top: 23px solid transparent;
     border-bottom: 0px solid transparent;
-    border-right: 20px solid #e24545;
+    border-right: 20px solid #f37321;
     position: absolute;
     top: 0;
     margin-top: 0px;
@@ -5633,11 +5646,11 @@ li.cat-parent {
 }
 #secondary.sidebar ul li:hover>a,
 #secondary.sidebar ul li:hover {
-    color: #e24545;
-    /*border-color: #e24545;*/
+    color: #f37321;
+    /*border-color: #f37321;*/
 }
 #secondary.sidebar ul li a span:hover {
-    color: #e24545;
+    color: #f37321;
 }
 #secondary.sidebar ul li span,
 #secondary.sidebar ul li a {
@@ -5695,25 +5708,25 @@ li.cat-parent {
 .woocommerce .widget_price_filter .price_slider_amount button {
     float: right !important;
     border-radius: 0px !important;
-    background: #e24545 !important;
+    background: #f37321 !important;
     font-size: 14px;
     line-height: 36px;
     color: #ffffff;
     font-weight: 700;
     padding: 0px 25px;
-    border: 2px solid #e24545;
+    border: 2px solid #f37321;
     -webkit-transition: all 0.3s ease 0s;
     outline: 0;
 }
 .woocommerce .widget_price_filter .price_slider_amount button:hover {
     opacity: 1;
     background: #FFFFFF !important;
-    color: #E24545 !important;
-    border: 2px solid #e24545;
+    color: #f37321 !important;
+    border: 2px solid #f37321;
 }
 .woocommerce .widget_price_filter .price_label {
     float: left !important;
-    color: #e24545;
+    color: #f37321;
     font-weight: 700;
     font-size: 14px;
     line-height: 40px;
@@ -5729,7 +5742,7 @@ li.cat-parent {
     color:#77a464;
 }
 #secondary.sidebar ul li del span.amount{
-        color: #e24545; 
+        color: #f37321; 
 }
 .woocommerce ul.cart_list li img,
 .woocommerce ul.product_list_widget li img {
@@ -5743,13 +5756,13 @@ li.cat-parent {
 .woocommerce .widget_products ul li {
     font-size: 14px !important;
     line-height: 22px !important;
-    color: #e24545 !important;
+    color: #f37321 !important;
     font-weight: 700 !important;
     padding: 20px 0px !important;
     border-bottom: 1px solid #f2f2f2 !important;
 }
 .woocommerce .widget_products ul li:hover {
-    /*border-bottom: 1px solid #e24545 !important;*/
+    /*border-bottom: 1px solid #f37321 !important;*/
     cursor: pointer;
 }
 .woocommerce .widget_products ul li:first-child {
@@ -5765,7 +5778,7 @@ li.cat-parent {
     float: left;
 }
 .total-products {
-    color: #e24545;
+    color: #f37321;
 }
 .woocommerce .content-area .woocommerce-ordering select {
     margin: 0px;
@@ -5813,7 +5826,7 @@ padding-right: 55px;
 .woocommerce .content-area .products {
     margin-bottom: 0px;
     margin-top: 0px;
-    border-top: 5px solid #e24545;
+    border-top: 5px solid #f37321;
     padding-top: 20px;
 }
 ul.products.list li.product:last-child {
@@ -5845,7 +5858,7 @@ ul.products.list li.product:last-child {
 }
 .gridlist-toggle a#grid.active,
 .gridlist-toggle a#grid:hover {
-    background: url("images/active.png") no-repeat scroll center center #e24545 !important;
+    background: url("images/active.png") no-repeat scroll center center #f37321 !important;
     margin: 0px 5px;
 }
 .gridlist-toggle a#list {
@@ -5853,7 +5866,7 @@ ul.products.list li.product:last-child {
 }
 .gridlist-toggle a#list.active,
 .gridlist-toggle a#list:hover {
-    background: url("images/inactive.png") no-repeat scroll center center #e24545 !important;
+    background: url("images/inactive.png") no-repeat scroll center center #f37321 !important;
 }
 .gridlist-toggle a span {
     display: none;
@@ -5883,7 +5896,7 @@ ul.products.list li.product:last-child {
     width: 100% !important;
 }
 .blog_desc .entry-header span.cat-name {
-    color: #e24545;
+    color: #f37321;
     font-size: 14px;
     line-height: 22px;
     font-weight: 700;
@@ -5917,7 +5930,7 @@ ul.products.list li.product:last-child {
     margin-bottom: 0px;
 }
 .blog_desc .entry-header p.meta-info a {
-    color: #e24545;
+    color: #f37321;
     font-size: 14px;
     line-height: 24px;
     font-weight: 400;
@@ -5941,7 +5954,7 @@ ul.products.list li.product:last-child {
 }
 .content-area article .entry-content a.read-more {
     border: 2px solid #ffffff;
-    background: #e24545;
+    background: #f37321;
     color: #ffffff;
     line-height: 30px;
     padding: 5px 40px;
@@ -5951,15 +5964,15 @@ ul.products.list li.product:last-child {
     margin-top: 0px;
 }
 .content-area article .entry-content a.read-more:hover {
-    border: 2px solid #e24545;
+    border: 2px solid #f37321;
     background: #ffffff;
-    color: #e24545;
+    color: #f37321;
 }
 .content-area article .entry-content .post-thumbnail img {
     width: 100% !important;
 }
 .content-area article .entry-content span.cat-name {
-    color: #e24545;
+    color: #f37321;
     font-size: 16px;
     line-height: 16px;
     font-weight: 700;
@@ -5987,7 +6000,7 @@ ul.products.list li.product:last-child {
     margin-bottom: 0px;
 }
 .content-area article .entry-content p.meta-info a {
-    color: #e24545;
+    color: #f37321;
     font-size: 14px;
     line-height: 24px;
     font-weight: 400;
@@ -6001,7 +6014,7 @@ ul.products.list li.product:last-child {
     font-family: 'Lato';
 }
 .content-area nav .nav-links a {
-    background: #e24545 !important;
+    background: #f37321 !important;
 }
 .content-area #respond {
     background: #ffffff !important;
@@ -6123,18 +6136,18 @@ ul.products.list li.product:last-child {
     display: none !important;
 }
 #respond input#submit {
-    background: #e24545;
+    background: #f37321;
     font-size: 13px;
     line-height: 35px;
     color: #ffffff;
     overflow: hidden;
     margin-left: 0px;
-    border: 2px solid #e24545;
+    border: 2px solid #f37321;
 }
 #respond input#submit:hover {
     background: #ffffff;
-    color: #e24545;
-    border: 2px solid #e24545;
+    color: #f37321;
+    border: 2px solid #f37321;
 }
 .woocommerce-cart h2.post-title,
 .woocommerce-cart p.meta-info {
@@ -6217,11 +6230,11 @@ h3#order_review_heading {
     color: #ffffff !important;
 }
 .woocommerce #content table.wishlist_table.cart a.remove:hover {
-    background: #e24545;
+    background: #f37321;
     border-radius: 0px;
 }
 .woocommerce .wishlist_table td.product-add-to-cart a {
-    background: #e24545;
+    background: #f37321;
     margin-right: 10px;
     border-radius: 0px;
 }
@@ -6245,7 +6258,7 @@ h3#order_review_heading {
 
 .edit-link a {
     border-radius: 0px;
-    background: #e24545;
+    background: #f37321;
     color: #ffffff;
     font-weight: 400;
 }
@@ -6268,7 +6281,7 @@ h3#order_review_heading {
     font-style: normal;
     font-weight: normal;
     text-decoration: inherit;
-    color: #e24545;
+    color: #f37321;
     font-size: 40px;
     padding-right: 0.5em;
 }
@@ -6455,7 +6468,7 @@ ul.products.list li.product hr {
     left: -579px;
     top: 60px;
     background: #fff;
-    border-top: 5px solid #E24545;
+    border-top: 5px solid #f37321;
 }
 .accesspress-menu-bar .top-nav li:hover .widget-sub-menu li {
     width: 25%;
@@ -6535,7 +6548,7 @@ ul.products.list li.product hr {
     font-weight: 700;
     font-size: 16px;
     line-height: 40px;
-    color: #e24545;
+    color: #f37321;
     text-transform: uppercase;
 }
 .style_one .promo-desc {
@@ -6833,8 +6846,8 @@ AP WIDGET TITLE SECOND AYOUT
     font-size: 25px;
 }
 .widget.widget_accesspress_storemo .btn.promo-link-btn {
-    background: #e24545 none repeat scroll 0 0;
-    border: 2px solid #e24545;
+    background: #f37321 none repeat scroll 0 0;
+    border: 2px solid #f37321;
     color: #fff;
     display: inline-block;
     font-weight: 300;
@@ -6884,7 +6897,7 @@ AP WIDGET TITLE SECOND AYOUT
     -webkit-transition: all ease 0.3s;
 }
 .apwidget_title .widget_search button:hover {
-    color: #e24545;
+    color: #f37321;
 }
 .apwidget_title .widget_search input {
     border: medium none;
@@ -6903,8 +6916,8 @@ AP WIDGET TITLE SECOND AYOUT
     width: 100%;
 }
 .apwidget_title .widget.widget_text.elp-widget input[type="button"] {
-    background: #e24545 none repeat scroll 0 0;
-    border: 2px solid #e24545;
+    background: #f37321 none repeat scroll 0 0;
+    border: 2px solid #f37321;
     color: #ffffff;
     cursor: pointer;
     font-weight: 300;
@@ -6920,8 +6933,8 @@ AP WIDGET TITLE SECOND AYOUT
 }
 .apwidget_title .widget.widget_text.elp-widget input[type="button"]:hover {
     background: #ffffff none repeat scroll 0 0;
-    border-color: #e24545;
-    color: #e24545;
+    border-color: #f37321;
+    color: #f37321;
 }
 .apwidget_title .checkout .woocommerce-billing-fields h3, .apwidget_title .checkout .woocommerce-shipping-fields h3 {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
@@ -6949,6 +6962,10 @@ AP WIDGET TITLE SECOND AYOUT
 }
 .woocommerce .wishlist-title h2 {
     font-size: 16px; 
+}
+
+.top-footer-block .widget_text .textwidget {
+	color: white;
 }
 
 .apwidget_title .top-footer-block .widget-title {
@@ -7022,6 +7039,7 @@ AP WIDGET TITLE SECOND AYOUT
 }
 
 .smartlib-icon i {
+	color: #f37321;
   display: table-cell;
   vertical-align: middle;
 }
@@ -7120,4 +7138,21 @@ AP WIDGET TITLE SECOND AYOUT
   float: left;
   font-size: 12px;
   line-height: 1.6;
+}
+
+
+
+#text-16 .widget-title,
+#text-17 .widget-title,
+#text-18 .widget-title {
+	background-color: #008db2;
+	padding: 10px 0 10px 10px;
+	color: white;
+}
+
+#text-16 .textwidget ul,
+#text-17 .textwidget ul,
+#text-18 .textwidget ul {
+	list-style: none;
+	margin: 0 0 0 10px;
 }
