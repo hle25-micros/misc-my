@@ -1103,7 +1103,10 @@ HEADER TWO
     top: 100%;
     background: none;
 }
+
+/* Customized */
 .headertwo .home_navigation .inner_home #menu .main-navigation ul.menu > li.menu-item-has-children::after {
+	display: none;
     top: 22px;
     right: 15px;
     border-width: 4px;
@@ -1117,6 +1120,7 @@ HEADER TWO
     color: #777;
 }
 
+/* Customized */
 .headertwo .home_navigation .inner_home #menu #site-navigation .menu > li.menu-item-has-children > a {
     padding-right: 30px;
 }
@@ -3508,6 +3512,11 @@ Responsive grid for pages
 .site-info {
     font-size: 13px;
 }
+
+.site-info a {
+	display: none;
+}
+
 .seal-logo-wrap {
     float: right;
 }
