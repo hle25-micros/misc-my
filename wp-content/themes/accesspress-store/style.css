@@ -927,13 +927,20 @@ body {
     padding-bottom: 5px;
     min-height: 60px;
 }
+
+/* Customized */
 #site-branding .site-logo {
     float: left;
     margin-right: 15px;
+	max-width: 150px
 }
+
+/* Customized */
 #site-branding .site-text {
+	display: none;
     float: left;
 }
+
 #site-branding h1.site-title {
     font-family: "Oswald", sans-serif;
     font-size: 28px;
@@ -954,7 +961,10 @@ body {
     color: #c97178;
     text-decoration: none;
 }
+
+/* Customized */
 .login-woocommerce {
+	display: none;
     float: right;
     line-height: 16px;
     margin: 8px 0;
@@ -1026,6 +1036,7 @@ body {
 HEADER TWO
 ---------------------------------------------------*/
 .headertwo .before-top-header {
+	background-color: #f37321;
     border-bottom: 1px solid #eee;
 }
 .headertwo #site-branding {
@@ -1223,7 +1234,8 @@ HEADER TWO
 .slider-caption .caption-title {
     color: #ffffff;
     font-family: 'Lato', sans-serif;
-    font-size: 70px;
+    font-size: 2.2em;
+	font-weight: bold;
     line-height: 72px;
     text-transform: uppercase;
     margin-bottom: 30px;
@@ -3414,7 +3426,7 @@ Responsive grid for pages
     cursor: pointer;
     display: block;
     height: 166px;
-    right: 10%;
+    right: 2%;
     position: absolute;
     text-indent: -9999px;
     width: 96px;
@@ -4096,7 +4108,10 @@ ul.products.list li.product .gridlist-buttonwrap {
     background-color: #fff;
     color: #000;
 }
+
+/* Customized */
 .welcome-user {
+	display: none;
     float: right;
     margin-left: 5px;
     font-size: 13px;
@@ -4226,11 +4241,14 @@ div.view-cart:hover .sub-menu {
     font-weight: 700;
     text-align: center;
 }
+
+/* Customized */
 .header-callto {
     font-size: 13px;
     color: #666;
     line-height: 19px;
     float: right;
+	padding: 0 5px 0 0;
 }
 .search-icon {
     float: right;
@@ -4309,8 +4327,9 @@ div.view-cart .sub-menu {
     background: #313131;
     z-index: -1;
 }
+
 .before-top-header {
-    padding: 5px 0;
+    padding: 8px 0 4px 0;
 } 
 .top-header {
     margin: 0px;
@@ -4320,19 +4339,29 @@ div.view-cart .sub-menu {
 .top-header span.amount {
     margin: 0px;
 }
+
+/* Customized */
+.header-callto .widget_text .textwidget ul {
+	margin: 0;
+}
+
 .header-callto a {
     color: #666;
     font-weight: normal !important;
 }
 .header-callto a i {
-    color: #e24545;
+    color: #f37321;
     margin: 0px 2px;
 }
+
 .header-callto a:last-child {
     color: #666;
     text-transform: none;
 }
+
+/* Customized */
 a.quick-wishlist {
+	display: none;
     float: right;
     border-left: 1px solid #919191;
     border-right: 1px solid #919191;
@@ -4346,7 +4375,10 @@ a.quick-wishlist {
 .headertwo .headertwo-wrap .login-woocommerce a {
     color: #919191;
 }
+
+/* Customized */
 .view-cart {
+	display: none;
     padding-left: 10px;
     line-height: 16px;
     margin: 8px 6px 8px 0;
@@ -4452,7 +4484,7 @@ a.quick-wishlist {
     cursor: pointer;
     display: block;
     height: 166px;
-    left: 10%;
+    left: 2%;
     position: absolute;
     text-indent: -9999px;
     width: 96px;
@@ -4573,15 +4605,18 @@ a.quick-wishlist {
     top: 0;
     height: 100%;
 }
-.search-form input.search-field {
+
+/* Customized */
+.search-form input.search-field {	
     border-radius: 0px;
     border: none;
     background: transparent;
-    padding:3px 35px 3px 15px;
+    padding:3px 0 3px 15px;
     line-height: 24px;
     color: #666;
     font-size: 13px;
 }
+
 .search-form {
     float: right;
     background: #efefef;
@@ -6976,16 +7011,21 @@ AP WIDGET TITLE SECOND AYOUT
   display: table;
   color: #fff;
 }
+
 .smartlib-icon i {
   display: table-cell;
   vertical-align: middle;
 }
+
+/* Customized */
 .smartlib-icon:hover {
-  background-color: #1bb999 !important;
+  background-color: #00bdb2 !important;
 }
+
 .smartlib-icon:hover i {
   color: #fff!important;
 }
+
 .smartlib-icon-large {
   width: 50px;
   height: 50px;
@@ -6998,8 +7038,9 @@ AP WIDGET TITLE SECOND AYOUT
 .smartlib-small-square-icon {
   width: 28px;
   height: 28px;
-  color: #fff !important;
+  color: #007BC2 !important;
   padding: 0 !important;
+  background-color: #ffffff !important;
 }
 .smartlib-large-square-icon {
   width: 45px;
