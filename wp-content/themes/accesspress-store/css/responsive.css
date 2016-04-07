@@ -771,16 +771,16 @@
     }
     .view-cart,    
     .login-woocommerce{
+		display: none;
         float:none;
         margin:0px;
         padding:0px 5px; 
-        display: inline-block;
     }
     a.quick-wishlist{
+		display: none;
         float:none;
         padding:0px 5px; 
         margin: 0 !important;
-        display: inline-block;
     }
     .search-form{
         float:right;
