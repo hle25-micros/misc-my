@@ -70,6 +70,7 @@
                 <?php } ?>
             </div>
             <!-- if enabled from customizer -->
+			
             <?php if (!get_theme_mod('hide_header_product_search')) { ?>
                 <div class="search-form">
                     <?php get_search_form(); ?>

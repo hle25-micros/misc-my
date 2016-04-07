@@ -73,11 +73,16 @@
                         </a>
                     <?php } ?>
                 </div>
+				<div class="investor-relations">
+					<span class="title">MISC - 3816&nbsp:&nbsp</span><span class="rm-value">RM 8.830&nbsp&nbsp|&nbsp&nbsp</span><span class="rm-rate">0.020 (0.23%)</span>
+				</div>
                 <!-- if enabled from customizer -->
                 <?php if (!get_theme_mod('hide_header_product_search')) { ?>
-                    <div class="search-form">
-                        <?php get_search_form(); ?>
-                    </div>
+					<div class="search-form-container">
+						<div class="search-form">
+							<?php get_search_form(); ?>
+						</div>
+					</div>
                 <?php } ?>
             </div>
 

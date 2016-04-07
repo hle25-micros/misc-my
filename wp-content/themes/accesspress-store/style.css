@@ -513,7 +513,7 @@ a {
 .main-navigation ul ul li a {
     min-width: 160px;
     border-bottom: 1px solid rgba(0,0,0,0.1);
-    background: #f37321;
+    background: #007bc2;
     -moz-transition: all .35s ease;
     -ms-transition: all .35s ease;
     -o-transition: all .35s ease;
@@ -535,7 +535,7 @@ a {
     border: 6px solid transparent;
     width: 0;
     height: 0;
-    border-bottom-color: #f37321;
+    border-bottom-color: #007bc2;
     position: absolute;
     top: -12px;
     left: 30px;
@@ -3572,8 +3572,8 @@ Responsive grid for pages
     overflow: hidden;
 }
 #promo-section2 .promo-product2 aside {
-    width: 100%;
-    padding: 40px 0px;
+    width: 50%;
+    padding: 10px 10px;
 }
 .cta-video-btn.bttn {
     background-color: #c97178;
@@ -3626,7 +3626,7 @@ Responsive grid for pages
     display: none;
 }
 .caption-read-more1 {
-    background-color: #f37321;
+    background-color: #007bc2;
     color: #ffffff;
     display: inline-block;
     font-size: 16px;
@@ -3639,7 +3639,7 @@ Responsive grid for pages
 }
 
 .caption-read-more1:hover {
-    background-color: rgba(0, 123, 194, 0.85);
+    background-color: rgba(243, 115, 33, 0.85);
     color: #ffffff;
 }
 
@@ -4364,6 +4364,7 @@ div.view-cart .sub-menu {
 
 /* Customized */ 
 .before-top-header {
+	display: none;
     padding: 8px 0 10px 0;
 } 
 .top-header {
@@ -4660,7 +4661,7 @@ a.quick-wishlist {
 
 .headertwo .headertwo-wrap .search-form {
     background: none;
-    width: 40%;
+    width: 100%;
 }
 .headertwo .headertwo-wrap form.searchform {
     border: 1px solid #eee;
@@ -6279,7 +6280,7 @@ h3#order_review_heading {
 
 #ak-top {
     position: fixed;
-    bottom: 40px;
+    bottom: 100px;
     right: 40px;
     width: 40px;
     height: 40px;
@@ -7052,9 +7053,9 @@ AP WIDGET TITLE SECOND AYOUT
 }
 
 .smartlib-icon i {
-	color: #f37321;
-  display: table-cell;
-  vertical-align: middle;
+	color: #007bc2;
+  	display: table-cell;
+  	vertical-align: middle;
 }
 
 /* Customized */
@@ -7153,32 +7154,45 @@ AP WIDGET TITLE SECOND AYOUT
   line-height: 1.6;
 }
 
-
-
+.headertwo-wrap {
+	position: relative;
+}
 
 .investor-relations {
 	margin: 0 5px 0 0;
-	color: white;
+	color: #777777;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
 }
 
 .investor-relations .title {
 	font-weight: bold;
+	font-size: 0.8em;
 }
 
 .investor-relations .rm-value,
 .investor-relations .rm-rate {
-	font-size: 1.4em;
+	font-size: 0.8em;
 }
 
 .investor-relations .rm-rate:before {
 	font: normal normal normal 14px/1 FontAwesome;	
 	font-size: 1.2em;
-	margin: 0 10px 0 0;
+	margin: 0 5px 0 0;
 	content: '\f176';
+	color: #3f802c;
+}
+
+.search-form-container {
+	position: absolute;
+	right: 0px;
+	top: 0;
 }
 
 .widget-title-custom a {
-	background-color: #f37321;
+	display: block
+	background-color: #007bc2;
 	padding: 5px 0 6px 10px;
 	color: white;
 	font-size: 18px;
@@ -7188,7 +7202,7 @@ AP WIDGET TITLE SECOND AYOUT
 }
 
 .widget-title-custom a:hover {
-	background-color: #007bc2;
+	background-color: rgba(243, 115, 33, 0.85);
 	color: white;
 }
 
@@ -7196,12 +7210,17 @@ AP WIDGET TITLE SECOND AYOUT
 	color: white;
 }
 
-#text-16 .textwidget ul,
 #text-17 .textwidget ul,
 #text-18 .textwidget ul {
 	list-style: none;
 	padding: 0 10px;
 	margin: 0;
+}
+
+.widget-title-custom a {
+	text-align: left;
+	background-color: #007bc2;
+	display: block;
 }
 
 .widget-title-custom a:before {
@@ -7210,8 +7229,21 @@ AP WIDGET TITLE SECOND AYOUT
 	margin: 0 10px 0 0;
 }
 
+#text-21 {
+	margin: 0;
+	padding: 0;
+}
 
-#text-16 .widget-title-custom a:before {
+.widget-title-custom a:hover {
+	background-color: rgba(243, 115, 33, 0.85);
+	-webkit-transition: all ease 0.4s;
+	-moz-transition: all ease 0.4s;
+	-ms-transition: all ease 0.4s;
+	-o-transition: all ease 0.4s;
+	transition: all ease 0.4s;
+}
+
+#text-21 .widget-title-custom a:before {
 	content: '\f1ea';
 }
 
@@ -7262,4 +7294,123 @@ AP WIDGET TITLE SECOND AYOUT
 	width: 50%;
 }
 
+#site-navigation .menu > li li a:hover {
+	background-color: rgba(243, 115, 33, 0.85);
+	-webkit-transition: all ease 0.4s;
+	-moz-transition: all ease 0.4s;
+	-ms-transition: all ease 0.4s;
+	-o-transition: all ease 0.4s;
+	transition: all ease 0.4s;
+}
 
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #fff;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #fff;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #fff;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color:    #fff;
+}
+
+.promo-product1 aside {
+	width: 100% !important;
+}
+
+#huge_it_gallery_widget-2.widget.widget_huge_it_gallery_widget.widget-count-4{
+	width: 100% !important;
+}
+
+#main-slider_1 .slider-content-wrapper .button-block a, 
+#main-slider_1 .slider-content-wrapper .button-block a:link, 
+#main-slider_1 .slider-content-wrapper .button-block a:visited {
+	background-color: #007bc2 !important;
+}
+
+#main-slider_1 .slider-content-wrapper .button-block a:hover, 
+#main-slider_1 .slider-content-wrapper .button-block a:focus, 
+#main-slider_1 .slider-content-wrapper .button-block a:active {
+	background-color: rgba(243, 115, 33, 0.85);
+	-webkit-transition: all ease 0.4s;
+	-moz-transition: all ease 0.4s;
+	-ms-transition: all ease 0.4s;
+	-o-transition: all ease 0.4s;
+	transition: all ease 0.4s;
+}
+
+.page.page-id-812 .page_header_wrap {
+	display: none;
+}
+
+#post-812 .post-title {
+	color: #007bc2;
+	text-transform: none;
+}
+
+#post-812 .content-page {
+	margin: 20px 0 0 0;
+}
+
+#post-812 .content-page ul.nav.nav-tabs {
+	background-color: #007bc2;
+	margin: 0;
+	padding: 10px 0;
+}
+
+#post-812 .content-page ul.nav.nav-tabs li a {
+	color: white;	
+	padding: 8px;
+}
+
+#post-812 .content-page ul.nav.nav-tabs li a:hover {
+	background-color: white;
+	color: rgba(243, 115, 33, 1);
+	-webkit-transition: all ease 0.4s;
+	-moz-transition: all ease 0.4s;
+	-ms-transition: all ease 0.4s;
+	-o-transition: all ease 0.4s;
+	transition: all ease 0.4s;
+	border-radius: 0;
+	border-bottom: 3px solid rgba(243, 115, 33, 1);
+}
+
+#post-812 .content-page ul.nav.nav-tabs li.active a {
+	background-color: white;
+	color: rgba(243, 115, 33, 1);
+	border-radius: 0;
+	border-bottom: 3px solid rgba(243, 115, 33, 1);
+}
+
+#post-812 .tab-content {
+	float: left;
+	width: 100%;
+}
+
+#post-812 .tab-content ul {
+	list-style: none;
+	margin: 0 0 0 20px;
+}
+
+#post-812 .tab-content ul li {
+	color: #007bc2;
+	font-size: 1.3em;
+	font-weight: bold;
+	margin: 0 0 20px 0;
+}
+
+#post-812 .tab-content ul li ul {
+	list-style-type: disc;
+	margin: 0 0 0 30px;
+}
+
+#post-812 .tab-content ul li ul li {
+	font-size: 0.7em;
+	color: #777777;
+	font-weight: normal;
+	margin: 0;
+}
