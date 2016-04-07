@@ -150,3 +150,24 @@ jQuery(function ($) {
 $('.navigation').addClass("clearfix");
 
 });//doc close
+
+jQuery(function ($) {
+	var items = $('.tabbed-content-control>ul>li').each(function () {
+		$(this).click(function () {			
+			//remove previous class and add it to clicked tab
+			items.removeClass('active');
+			$(this).addClass('active');
+			$('.tabbed-content-control>div.tab-content>div.tab-pane').hide().eq(items.index($(this))).show();
+			//window.location.hash = $(this).attr('tab');
+		});
+	});
+	
+	showTab("tab_current");
+   
+
+	function showTab(tab) {
+		$("#"+tab).click();
+	}
+
+	
+});
