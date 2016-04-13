@@ -6005,11 +6005,13 @@ ul.products.list li.product:last-child {
     display: block;
     text-transform: uppercase;
 }
+
+/* Customized */
 .content-area article .entry-content h2.post-title {
     color: #282828;
-    font-size: 26px;
-    line-height: 1;
-    font-weight: 700;
+    font-size: 2em;
+	font-weight: normal;
+    line-height: 1em;
     font-family: 'Lato';
     margin-bottom: 0px;
     text-transform: uppercase;
@@ -7201,24 +7203,16 @@ AP WIDGET TITLE SECOND AYOUT
 	top: 0;
 }
 
-.widget-title-custom a {
-	display: block
-	background-color: #007bc2;
-	padding: 5px 0 6px 10px;
-	color: white;
+.widget-title-custom {
+	display: block;
+	color: #007bc2;
 	font-size: 18px;
 	font-weight: 600;
-	margin-bottom: 5px;
 	text-transform: uppercase;
-}
-
-.widget-title-custom a:hover {
-	background-color: rgba(243, 115, 33, 0.85);
-	color: white;
-}
-
-.widget-title-custom a:hover:before {
-	color: white;
+	text-align: center;
+	border-bottom: 1px solid #007bc2;
+	width: 40%;
+	margin: 0 auto 15px auto;
 }
 
 #text-17 .textwidget ul,
@@ -7234,30 +7228,9 @@ AP WIDGET TITLE SECOND AYOUT
 	width: 100%;
 }
 
-.widget-title-custom a {
-	text-align: left;
-	background-color: #007bc2;
-	display: block;
-}
-
-.widget-title-custom a:before {
-	font: normal normal normal 14px/1 FontAwesome;	
-	font-size: 1.2em;
-	margin: 0 10px 0 0;
-}
-
 #text-21 {
 	margin: 0;
 	padding: 0;
-}
-
-.widget-title-custom a:hover {
-	background-color: rgba(243, 115, 33, 0.85);
-	-webkit-transition: all ease 0.4s;
-	-moz-transition: all ease 0.4s;
-	-ms-transition: all ease 0.4s;
-	-o-transition: all ease 0.4s;
-	transition: all ease 0.4s;
 }
 
 #text-21 .widget-title-custom a:before {
@@ -7527,7 +7500,7 @@ AP WIDGET TITLE SECOND AYOUT
 	
 	#main-slider_1 .slider-content-wrapper .right-block {
 		margin: 10px 0 0 0;
-	}
+	}		
 		
 	.top-footer-block #text-13 {
 		width: 100%;
@@ -7548,4 +7521,13 @@ AP WIDGET TITLE SECOND AYOUT
 	#wpadminbar {
 		position: fixed;
 	}
+	
+	#promo-section2 .promo-product2 aside:first-child {
+	    padding: 0;
+		margin: 0 0 10px 0;
+	}
+	
+	#promo-section2 .promo-product2 aside:last-child {
+		padding: 0;
+	}	
 }
