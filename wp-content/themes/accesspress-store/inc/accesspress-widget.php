@@ -71,3 +71,4 @@ require get_template_directory() . '/inc/widgets/widget-cta-video.php';
  * @since Accesspress Widget Pack 1.0
  */
 require get_template_directory() . '/inc/widgets/widget-full-promo.php';
+require get_template_directory() . '/inc/widgets/widget-onepage.php';

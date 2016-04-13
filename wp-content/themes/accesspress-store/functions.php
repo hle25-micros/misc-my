@@ -57,7 +57,11 @@ function accesspress_store_setup() {
     add_image_size('accesspress-blog-big-thumbnail', 760, 300, true);
 
     add_image_size('accesspress-slider', 1350, 570, true);
-    
+	
+    add_image_size( 'accesspress-featured-post', 781, 512, true );
+    add_image_size( 'accesspress-portfolio-image', 400, 350, true );
+    add_image_size( 'accesspress-featured-image', 319, 142, true );
+    add_image_size( 'accesspress-services', 470, 280, true );
     
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
@@ -330,4 +334,31 @@ function accesspressstore_get_themes( $request ) {
 		}
 	}
 	return $themes;
+}
+
+
+function excerpt($limit) {
+  $excerpt = explode(' ', get_the_excerpt(), $limit);
+  if (count($excerpt)>=$limit) {
+    array_pop($excerpt);
+    $excerpt = implode(" ",$excerpt).'...';
+  } else {
+    $excerpt = implode(" ",$excerpt);
+  }	
+  $excerpt = preg_replace('`\[[^\]]*\]`','',$excerpt);
+  return $excerpt;
+}
+ 
+function content($limit) {
+  $content = explode(' ', get_the_content(), $limit);
+  if (count($content)>=$limit) {
+    array_pop($content);
+    $content = implode(" ",$content).'...';
+  } else {
+    $content = implode(" ",$content);
+  }	
+  $content = preg_replace('/\[.+\]/','', $content);
+  $content = apply_filters('the_content', $content); 
+  $content = str_replace(']]>', ']]&gt;', $content);
+  return $content;
 }
