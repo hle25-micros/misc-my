@@ -1293,6 +1293,15 @@ jQuery(document).ready(function(){
 </script>
 
 <style type="text/css">
+
+.imgc_gallery #element88 {
+	border-color: aqua;
+    border-width: 3px;
+	text-transform: uppercase;
+	list-style: none;
+	outline: none;
+}
+
 .entry-content a{
 		border-bottom: none !important;
 }
