@@ -1051,24 +1051,28 @@ HEADER TWO
 .headertwo #site-branding {
     display: inline-block;
     min-height: inherit;
-    width: 30%;
+    /* width: 30%; */
     vertical-align: middle;
     padding-bottom: 0;
+    position: absolute;
+    left: -4%;
+    z-index: 9;
+    top: -5px;
 }
 .headertwo .headertwo-wrap {	
     display: inline-block;
-    width: 69%;
+    width: 100%;
     vertical-align: middle;
 }
 .headertwo .home_navigation {
     background: none;
-    border-top: 1px solid #eee;
+    /*border-top: 1px solid #eee;*/
 }
 .headertwo .home_navigation .inner_home::after, .headertwo .home_navigation .inner_home #menu::after {
     display: none;
 }
 .headertwo .home_navigation .inner_home {
-    border-bottom: 1px solid #eee;
+   /* border-bottom: 1px solid #eee;*/
 }
 .headertwo .home_navigation .right-header-main.clearfix {
     background: none;
@@ -4367,8 +4371,11 @@ div.view-cart .sub-menu {
     padding: 0px;
     border: none;
 }
+.inner_home .ak-container {
+    float: right;
+}
 .inner_home {
-    border-bottom: 5px solid #f37321;
+    /*border-bottom: 5px solid #f37321;*/
     position: relative;
 }
 .inner_home:after {
@@ -7187,11 +7194,12 @@ AP WIDGET TITLE SECOND AYOUT
 }
 
 .investor-relations {
-	margin: 0 5px 0 0;
-	color: #777777;
-	position: absolute;
-	right: 0px;
-	bottom: 0px;
+	margin: 0 auto;
+    color: #777777;
+    position: absolute;
+    right: -3%;
+    /* bottom: 0px; */
+    top: -10px;
 }
 
 .investor-relations .title {
