@@ -76,14 +76,7 @@
 				<div class="investor-relations">
 					<span class="title">MISC - 3816&nbsp:&nbsp</span><span class="rm-value">RM 8.830&nbsp&nbsp|&nbsp&nbsp</span><span class="rm-rate">0.020 (0.23%)</span>
 				</div>
-                <!-- if enabled from customizer -->
-                <?php if (!get_theme_mod('hide_header_product_search')) { ?>
-					<div class="search-form-container">
-						<div class="search-form">
-							<?php get_search_form(); ?>
-						</div>
-					</div>
-                <?php } ?>
+                
             </div>
 
         </div>
@@ -124,7 +117,21 @@
                         </div> 
                     </div> <!-- right-header -->
                 </div> <!-- right-header-main -->
+				<!-- if enabled from customizer -->
+			<?php if (!get_theme_mod('hide_header_product_search')) { ?>
+				<div class="home-search">
+				<div class="search-icon">
+					<i class="fa fa-search"> </i>
+				</div>
+
+				<div class="search-box">
+					<div class="close"> &times; </div>
+					<?php get_search_form(); ?>
+				</div>
+			</div> <!-- home-search-end -->
+			<?php } ?>
             </div>
+			
         </div>
     </section><!--Home Navigation-->
 

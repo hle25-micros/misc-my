@@ -1137,6 +1137,18 @@ HEADER TWO
 /*--------------------------------------------------------------
         Search Home css
 --------------------------------------------------------------*/
+.search-box .searchform {
+    left: 50%;
+    margin-left: -38%;
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 80%;
+}
 
 .search-icon {
     margin-left: 10px;
@@ -1172,12 +1184,13 @@ HEADER TWO
     -o-transition: width 0.3s ease 0s;
     transition: width 0.3s ease 0s;
 }
-.search-box .search-submit {
-    display: none;
-}
 .search-box .searchsubmit {
-    display: none;
+	font-size: 27px;
+	height: 60px;
+	line-height: 40px;
+	width: 60px;
 }
+
 .search-box .search-field {
     position: absolute;
     top: 50%;
@@ -7790,7 +7803,12 @@ Responsive grid for pages
 	ul.list-inline.smartlib-social-icons-navbar {
 		margin: 0 !important;
 	}	
-	
+	.search-box .search-field {
+        width: 93%;
+    }
+    .search-box .searchsubmit {
+        width: 7%;
+    }
 }
 
 @media(max-width: 1280px) {
@@ -7837,6 +7855,9 @@ Responsive grid for pages
 	.promo-product2 aside {
 		width: 50% !important;
 	}
+	.search-box .search-field {
+        width: 82%;
+    }
 }
 
 @media(max-width: 780px) {
@@ -7870,7 +7891,21 @@ Responsive grid for pages
 	.responsive-tabs .responsive-tabs__heading {
 		border-top: 1px solid #ccc !important;
 		margin: 0 0 5px 0 !important;
-	}			
+	}	
+	.search-box .search-field {
+        border: medium none;
+        float: left;
+        font-size: 22px;
+        height: 60px;
+        padding: 0 30px;
+        width: 82%;
+    }
+    .search-box .searchsubmit {
+        font-size: 27px;
+        height: 60px;
+        line-height: 40px;
+        width: 60px;
+    }
 }
 
 @media(max-width: 688px) {
@@ -8001,4 +8036,41 @@ Responsive grid for pages
 	#text-18.widget.widget_text {
 		padding: 0;
 	}
+	.search-icon i,
+    .search-icon {
+        display: block;
+        line-height: 60px;
+    }
+	.search-box .close {
+        font-size: 70px;
+        top: 0;
+    }
 }
+@media (max-width: 480px) {
+
+	.search-box .search-field {
+        border: medium none;
+        float: left;
+        font-size: 22px;
+        height: 40px;
+        padding: 0 20px;
+        width: 75%;
+    }
+    .search-box .searchsubmit {
+        font-size: 14px;
+        height: 40px;
+        line-height: 20px;
+        width: 40px;
+    }
+}
+.home-search {
+	padding-right: 1%;
+	position: absolute;
+    z-index: 2;
+    width: 100%;
+    top: 10px;
+	cursor: pointer;
+}
+
+
+

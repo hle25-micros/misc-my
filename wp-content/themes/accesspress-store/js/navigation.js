@@ -42,3 +42,11 @@
 		}
 	};
 } )();
+
+jQuery('.search-icon').click(function() {
+	jQuery('.search-box').toggleClass('active');
+});
+
+jQuery('.search-box .close').click(function() {
+	jQuery('.search-box').removeClass('active');
+});
