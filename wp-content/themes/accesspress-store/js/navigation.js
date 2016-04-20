@@ -50,3 +50,20 @@ jQuery('.search-icon').click(function() {
 jQuery('.search-box .close').click(function() {
 	jQuery('.search-box').removeClass('active');
 });
+
+
+jQuery(function () {
+	jQuery('.store-menu ul li').not(".store-menu ul li ul li").click(function(e){
+		jQuery(".store-menu ul li ul").hide();
+		jQuery(this).children('ul').stop().toggle();
+		e.stopPropagation();
+	});
+	jQuery(".store-menu ul li ul li").click(function(e){
+		$(this).children('ul').stop().toggle();
+		e.stopPropagation();
+	});
+});
+
+jQuery(document).click(function() {
+	jQuery(".store-menu ul li ul").hide();
+});
