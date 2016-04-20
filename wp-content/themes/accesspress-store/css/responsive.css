@@ -1264,7 +1264,7 @@
 		position: relative;
 		left: 0px;
     }
-	.investor-relations{position: fixed;width: 100%;left: 50%;margin-left: -50%;top: 20%;}
+	.investor-relations{position: relative;width: 100%;left: 50%;margin-left: -50%;top: 20%;}
 	.home-search{position: absolute;left: -84px;top: -4%;right: 9%;}
 	.search-icon i, .search-icon {z-index: 9;line-height:none;}
 	.search-icon::before {top: 13px;top: 39%;left: 37px;}
