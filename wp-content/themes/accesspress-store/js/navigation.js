@@ -50,26 +50,25 @@ jQuery('.search-icon').click(function() {
 jQuery('.search-box .close').click(function() {
 	jQuery('.search-box').removeClass('active');
 });
+
 jQuery(document).ready(function() {
-	//jQuery('#site-navigation .menu-item-has-children').append('<span class="sub-toggle"> <i class="fa fa-angle-right"></i> </span>');
 	jQuery(window).on('load', function() {
 
-			var width = Math.max(window.innerWidth, document.documentElement.clientWidth);
+		var width = Math.max(window.innerWidth, document.documentElement.clientWidth);
 
-        	 if (width && width <= 687) {
-				jQuery('.menu-toggle,#site-navigation a').click(function() {
-					jQuery('#site-navigation .menu-primary-container,#site-navigation div.menu').slideToggle();
-				});
-				jQuery(".store-menu ul li ul.sub-menu").hide();
-	    	}
+		 if (width && width <= 687) {
+			jQuery('.menu-toggle,#site-navigation a').click(function() {
+				jQuery('#site-navigation .menu-primary-container,#site-navigation div.menu').slideToggle();
+			});
+			jQuery(".store-menu ul li ul.sub-menu").hide();
+		}
 	});
-				jQuery(window).resize(function(){
-					var width = Math.max(window.innerWidth, document.documentElement.clientWidth);
-					console.log(width);
-					if (width && width <= 687) {
-						jQuery(".store-menu ul li ul.sub-menu").hide();	
-					}else{jQuery(".store-menu ul li ul.sub-menu").show();	}
-				});
+	jQuery(window).resize(function(){
+		var width = Math.max(window.innerWidth, document.documentElement.clientWidth);					
+		if (width && width <= 687) {
+			jQuery(".store-menu ul li ul.sub-menu").hide();	
+		}else{jQuery(".store-menu ul li ul.sub-menu").show();	}
+	});
    jQuery('#site-navigation .menu-item-has-children').append('<span class="sub-toggle"> <i class="fa fa-angle-right"></i> </span>');
 
    jQuery('#site-navigation .sub-toggle').click(function() {
@@ -78,19 +77,3 @@ jQuery(document).ready(function() {
    });
    
 });	
-/*
-jQuery(function () {
-	jQuery('.store-menu ul li').not(".store-menu ul li ul li").click(function(e){
-		jQuery(".store-menu ul li ul").hide();
-		jQuery(this).children('ul').stop().toggle();
-		e.stopPropagation();
-	});
-	jQuery(".store-menu ul li ul li").click(function(e){
-		$(this).children('ul').stop().toggle();
-		e.stopPropagation();
-	});
-});
-
-jQuery(document).click(function() {
-	jQuery(".store-menu ul li ul").hide();
-});*/
