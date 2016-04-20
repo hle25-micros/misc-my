@@ -116,20 +116,21 @@
                             <?php } ?>
                         </div> 
                     </div> <!-- right-header -->
+					<?php if (!get_theme_mod('hide_header_product_search')) { ?>
+						<div class="home-search">
+						<div class="search-icon">
+							<i class="fa fa-search"> </i>
+						</div>
+
+						<div class="search-box">
+							<div class="close"> &times; </div>
+							<?php get_search_form(); ?>
+						</div>
+					</div> <!-- home-search-end -->
+					<?php } ?>
                 </div> <!-- right-header-main -->
 				<!-- if enabled from customizer -->
-			<?php if (!get_theme_mod('hide_header_product_search')) { ?>
-				<div class="home-search">
-				<div class="search-icon">
-					<i class="fa fa-search"> </i>
-				</div>
-
-				<div class="search-box">
-					<div class="close"> &times; </div>
-					<?php get_search_form(); ?>
-				</div>
-			</div> <!-- home-search-end -->
-			<?php } ?>
+			
             </div>
 			
         </div>
