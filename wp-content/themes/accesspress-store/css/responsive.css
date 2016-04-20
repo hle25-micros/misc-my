@@ -1179,6 +1179,19 @@
     .woocommerce div.product .woocommerce-product-rating {
         text-align: center;
     }*/
+	.sub-toggle {
+		background: #F36E56 none repeat scroll 0px 0px;
+		color: #FFF;
+		cursor: pointer;
+		display: block;
+		height: 24px;
+		line-height: 21px;
+		position: absolute;
+		right: 15px;
+		text-align: center;
+		top: 6px;
+		width: 24px;
+	}
     .woocommerce.single.single-product .entry-summary .price del,
     .woocommerce.single.single-product .entry-summary .price ins, 
     .woocommerce.single.single-product .entry-summary .price span {

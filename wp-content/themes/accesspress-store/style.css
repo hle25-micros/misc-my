@@ -585,6 +585,10 @@ a {
     -o-transform: rotateY(180deg);
     transform: rotateY(180deg);
 }
+
+.sub-toggle {
+    display: none;
+}
 .boxed #site-navigation > .store-menu > ul > li:last-child:hover ul {
     left: -99px;
 }
