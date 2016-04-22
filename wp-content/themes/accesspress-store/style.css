@@ -590,6 +590,13 @@ a {
     display: none;
 	background-color: #f37321 !important;
 }
+.search-results strong.search-excerpt {background-color: #FF0;
+    color: #00F;
+}
+.search-results span.date_post {
+    color: #AAA;
+    font-size: 12px;
+}
 .boxed #site-navigation > .store-menu > ul > li:last-child:hover ul {
     left: -99px;
 }

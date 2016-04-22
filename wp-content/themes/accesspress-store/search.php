@@ -1,53 +1,61 @@
 <?php
 /**
- * The template for displaying search results pages.
+ * The template for displaying Search Results pages.
  *
- * @package AccessPress Store
+ * @package ThemeGrill
+ * @subpackage Himalayas
+ * @since Himalayas 1.0
  */
-get_header();
 ?>
 
-
-    <div class="page_header_wrap clearfix">
-        <div class="ak-container">
-            <?php if (have_posts()) : ?>
-                <header class="page-header">
-                    <h2 class="page-title"><?php printf(__('Search Results for: %s', 'accesspress-store'), '<span>' . get_search_query() . '</span>'); ?></h2>
-                </header><!-- .page-header -->
-            <?php endif; ?>
-
-            <?php accesspress_breadcrumbs() ?>
-        </div>
-    </div>
-<div class="inner">
-    <main id="main" class="site-main clearfix <?php echo @$single_page_layout; ?>">
-        <div id="primary" class="content-area">
-            <?php if (have_posts()) : ?>
-                <?php /* Start the Loop */ ?>
-                <?php while (have_posts()) : the_post(); ?>
-
-                    <?php
-                    /**
-                     * Run the loop for the search to output the results.
-                     * If you want to overload this in a child theme then include a file
-                     * called content-search.php and that will be used instead.
-                     */
-                    get_template_part('content', 'search');
-                    ?>
-
-                <?php endwhile; ?>
-
-                <?php the_posts_navigation(); ?>
-
-            <?php else : ?>
-
-                <?php get_template_part('content', 'none'); ?>
-
-            <?php endif; ?>
+<?php get_header(); ?>
 
 
-        </div><!-- #primary -->
-        <?php get_sidebar('right'); ?>
-    </main><!-- #main -->
-</div>
+	<div id="content" class="site-content">
+		<main id="main" class="clearfix">
+			<div class="tg-container">
+				<div id="primary" class="content-area">
+
+					<?php if ( have_posts() ) : ?>
+						<div class="section-title-wrapper">
+							<h2 class="main-title"><?php echo 'Search Results'; ?></h2>
+						</div>
+						<!-- .page-header -->
+
+						<?php while ( have_posts() ) : the_post(); ?>
+
+							<?php 
+								$title = get_the_title(); 
+								$keys= explode(" ",$s); 
+								$title = preg_replace('/('.implode('|', $keys) .')/iu', '<strong class="search-excerpt">\0</strong>', $title); 
+							?>
+							<div class="title-block_2">
+								<h6><a href="<?php the_permalink(); ?>"><?php echo $title; ?></a></h6>
+							</div>
+							<div class="description-block_2">
+								<span class="date_post"><?php the_time('F j, Y') ?></span> <br>
+							<?php 
+							$excerpt = get_the_excerpt(); 
+								$keys= explode(" ",$s); 
+								$excerpt = preg_replace('/('.implode('|', $keys) .')/iu', '<strong class="search-excerpt">\0</strong>', $excerpt);
+								echo $excerpt;
+								 ?>
+							</div>
+							<hr/>
+						<?php endwhile; ?>
+
+						<?php get_template_part( 'navigation', 'search' ); ?>
+
+					<?php else : ?>
+					
+						<?php get_template_part( 'no-results', 'search' ); ?>
+
+					<?php endif; ?>
+
+				</div><!-- #primary -->
+			</div>
+		</main>
+	</div>
+
+
 <?php get_footer(); ?>
